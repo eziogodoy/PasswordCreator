@@ -3,8 +3,12 @@ var lowercase ="abcdefghijklmnopqrstuvwxyz"
 var upper = lowercase.toUpperCase()
 var number ="123456789"
 var special ="!@#$%^&*()"
-
-
+// password creation 
+function generatePassword () {
+  console.log("Hello from generate password")
+  var userChoice = window.prompt("Choose a number between 8 and 128");
+  userChoice = parseInt(userChoice) 
+  var choices =""
 
 
 // Assignment code here
