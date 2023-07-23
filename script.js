@@ -1,3 +1,12 @@
+// List of characters 
+var lowercase ="abcdefghijklmnopqrstuvwxyz"
+var upper = lowercase.toUpperCase()
+var number ="123456789"
+var special ="!@#$%^&*()"
+
+
+
+
 // Assignment code here
 
 
