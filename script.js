@@ -9,7 +9,16 @@ function generatePassword () {
   var userChoice = window.prompt("Choose a number between 8 and 128");
   userChoice = parseInt(userChoice) 
   var choices =""
-
+// Ask the user about which character would like 
+console.log("UserChoice",userChoice)
+var confirmUpper = window.confirm("Did you want upper case character");
+console.log("Upper",confirmUpper)
+var confirmLower = window.confirm("Did you want lower case character");
+console.log("Lower",confirmLower)
+var confirmNumber = window.confirm("Did you want number character");
+console.log("Number",confirmNumber)
+var confirmSpecialC = window.confirm("Did you want special character");
+console.log("SpecialC",confirmSpecialC)
 
 // Assignment code here
 
