@@ -19,6 +19,16 @@ var confirmNumber = window.confirm("Did you want number character");
 console.log("Number",confirmNumber)
 var confirmSpecialC = window.confirm("Did you want special character");
 console.log("SpecialC",confirmSpecialC)
+// If Uppercase is true* todos los Uppercase se tomaran en cuenta para la contrasena 
+if(confirmUpper) {choices = choices + upper}
+// Si lowercase es true* todos los lowercase se tomaran en cuenta para la contrasena 
+if(confirmLower) {choices = choices + lowercase}
+// Si number es true* todos los numbers se tomaran en cuenta para la contrasena 
+if(confirmNumber) {choices = choices + number}
+// Si specialC es true* todos los specialC se tomaran en cuenta para la contrasena 
+if (confirmSpecialC) {choices = choices + special}
+
+
 
 // Assignment code here
 
