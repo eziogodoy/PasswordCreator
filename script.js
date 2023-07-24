@@ -28,9 +28,18 @@ if(confirmNumber) {choices = choices + number}
 // Si specialC es true* todos los specialC se tomaran en cuenta para la contrasena 
 if (confirmSpecialC) {choices = choices + special}
 
+var results = ""; 
+// Based on the user Choices, the console make random choices using the list
+for (let step = 0; step < userChoice; step++) {
+  var index = Math.floor(Math.random() * choices.length); 
+  console.log(index, choices[index])
 
+results += choices[index] 
+}
 
-// Assignment code here
+return results
+
+}
 
 
 // Get references to the #generate element
@@ -47,3 +56,4 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
